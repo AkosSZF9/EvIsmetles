@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 1200px;
+    margin: auto;
+}
+
+header {
+  background-color: orange;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 5px;
+  border: 2px solid orange;
+   text-align: center;
+}
+
+li {
+  padding-right: 25px;
+  list-style: none;
+}
+
+footer {
+  color: white;
+  background-color: orange;
+  padding: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  article {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  article {
+    grid-template-columns: 1fr;
+  }
+}
