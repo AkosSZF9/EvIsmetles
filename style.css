@@ -2,9 +2,10 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   max-width: 1200px;
-    margin: auto;
+  margin: auto;
+  background-color: blanchedalmond;
 }
 
 header {
@@ -12,30 +13,65 @@ header {
   color: white;
   text-align: center;
   padding: 15px;
+  margin: 5px;
+}
+.he {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+a:hover {
+  border: 1px solid gray;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
 }
 
 article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  border: 2px solid gray;
+  margin: 5px;
+}
+
+ul {
+  padding-left: 0px;
 }
 
 .card {
   margin: 5px;
   border: 2px solid orange;
-   text-align: center;
+  text-align: center;
+}
+
+h2 {
+  padding-left: 0px;
+}
+
+h3 {
+  padding-left: 0px;
 }
 
 li {
-  padding-right: 25px;
+  text-align: center;
   list-style: none;
 }
 
 footer {
   color: white;
   background-color: orange;
-  padding: 15px;
+  padding: 25px;
   text-align: center;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 720px) {
@@ -47,5 +83,14 @@ footer {
 @media screen and (max-width: 360px) {
   article {
     grid-template-columns: 1fr;
+  }
+  .he {
+    grid-template-columns: 1fr;
+  }
+  .hl{
+    padding: 5px;
+  }
+  a {
+    padding: 0%;
   }
 }
